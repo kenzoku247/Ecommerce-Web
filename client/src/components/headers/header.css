@@ -1,0 +1,59 @@
+header{
+    min-height: 70px; /* Cach dau trang */
+    width: 100%; /* Do rong ngang */
+    overflow: hidden; /* Phần tràn được cắt bớt và phần còn lại của nội dung sẽ không hiển thị */
+    display: flex; /* Giúp các phần tử nằm linh hoạt */ 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    border-bottom: 1px solid #ddd;
+    /* place-items: 100px; */
+    position:sticky;
+    top: 0;
+    background-color: var(--main-bg-color);
+    z-index: 100;
+}
+
+
+header .logo{
+    flex: 1;
+    font-size: 20px;
+    font-weight: 900;
+}
+header a{
+    top:-100px;
+    text-transform: uppercase;
+    color: var(--icons-color);
+}
+header ul li{
+    display: inline-block;
+    opacity: 0.7;
+    padding: 0 20px;
+    font-size: 18px;
+}
+header ul li:hover{
+    opacity: 1;
+}
+.menu{
+    display: none;
+}
+.cart-icon{
+    position: relative;
+    margin-right: 20px;
+}
+.cart-icon span{
+    background: red;
+    border-radius: 50%;
+    color: var(--main-bg-color);
+    position: absolute;
+    top:-5px;
+    right: -8px;
+    padding: 3px 7px;
+    font-size: 10px;
+}
+
+.cart_img{
+    width: 30px;
+    height: 30px;
+    color: var(--icons-color);
+}

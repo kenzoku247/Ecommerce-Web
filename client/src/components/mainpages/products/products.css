@@ -1,0 +1,95 @@
+.products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 0 auto;
+    gap: 3rem;
+    /* background-color:rgb(3, 165, 206); */
+}
+
+/* ----------- Product Item ----------------- */
+@import url("../utils/productItem/productItem.css");
+
+.delete-all{
+    text-align: right;
+    margin: 20px;
+}
+.delete-all input{
+    height: 25px;
+    width: 25px;
+    transform: translateY(5px);
+    margin: 0 15px;
+}
+.delete-all span{
+    text-transform: uppercase;
+    color: rgb(3, 165, 206);
+    letter-spacing: 1.3px;
+    
+}
+
+/* ------------ Filters Menu ----------------- */
+.filter_menu{
+    width: 100%;
+    min-height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+.filter_menu select, input{
+    border: 1px solid #ccc;
+    outline: none;
+    height: 40px;
+    padding: 0 5px;
+}
+.filter_menu input{
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* -------------------- Load More --------------- */
+.load_more{
+    /* justify-content: space-between; */
+    text-align: center;
+}
+.load_more button{
+    padding: 0px  25px;
+    margin-bottom: 20px;
+    border: 2px solid #555;
+    text-transform: capitalize;
+    border-radius: 30px;
+}
+.load_more :hover{
+    background-color: #eaeaf0;
+}
+
+.bg_im {
+    /* position: absolute; */
+    background-image: url(../../middles/background.jpg);
+    height: 600px;
+    width: 100%;
+
+
+}
+
+.bg_im h1{
+    position: relative;
+    top: 250px;
+    text-align: center;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-size: 100px;
+    color:rgba(200, 255, 0, 0.849);
+    /* background-color:bisque; */
+    
+
+}
+
+.bg_im button{
+    align-items: center;
+    margin-top:250px;
+    margin-right: -300px;
+    
+}
